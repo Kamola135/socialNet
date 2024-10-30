@@ -33,7 +33,7 @@ function App() {
       element: <MainPage />,
     },
     {
-      path: "/profile-page",
+      path: "/profile",
       element: <ProfilePage />,
     },
   ]);
