@@ -11,7 +11,6 @@ import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store/store";
-import { changeUser } from "../../store/userSlice";
 import { useEffect } from "react";
 import { useLoginUserMutation } from "../../store/Api/authApi";
 
@@ -58,7 +57,7 @@ export const LoginPage = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<ILoginForm>({
-    resolver: yupResolver(loginFormScheme),
+   // resolver: yupResolver(loginFormScheme),
     defaultValues: {
       useremail: "",
       userpassword: "",
